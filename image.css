@@ -116,6 +116,9 @@ canvas {
     text-align: right;
 }
 
+.filters .name{
+padding-right: 150px;
+}
 .filters ul li:last-child {
     flex-direction: row;
     justify-content: space-between;
