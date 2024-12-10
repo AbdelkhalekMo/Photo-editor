@@ -5,6 +5,13 @@
     font-family:sans-serif;
     box-sizing: border-box;
 }
+body {
+    background-image: url('honeycombs-abstract-minimalism-simple-background-wallpaper-preview.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Makes the image cover the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    color: white; /* Ensures text is readable on the background */
+}
 
 /* Header Styles */
 header {
@@ -12,7 +19,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #000;
+    
     position: relative;
 }
 
@@ -32,19 +39,11 @@ header h5{
  top: -34px;
 }
 
-/* Body Background */
-body {
-    background: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-}
+
 
 /* Container Styles */
 .container {
-    background: black;
+    
     margin: auto;
     padding: 20px;
     border-radius: 10px;
