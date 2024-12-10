@@ -42,7 +42,11 @@ gap: 20px;
     width: 500px;
     height: 500px;
 }
-
+.canvas{
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #ccc;
+}
 .upload input{
     display: none;
 }
