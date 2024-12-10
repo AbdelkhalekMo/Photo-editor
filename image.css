@@ -1,99 +1,169 @@
-*{
+/* General Reset */
+* {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
-header{
+
+/* Header Styles */
+header {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
     position: relative;
 }
-header h1{
+
+header h1 {
     border: 3px solid rgb(0, 26, 255);
-    font-size: 50px;
-   color: white;
-   padding: 15px;
-   border-radius: 50px;
-}
-body{
-   background: black;
-}
-.container{
-    background: black;
-    margin: auto;
-    padding: 80px;
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: 5fr 3fr;
+    font-size: 2.5rem;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
 }
 header h5{
     color: white;
   padding-top: 40px;
  position: absolute;
- right: 10px;
+ right: -270px;
  top: -34px;
 }
-.img{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 20px;
+
+/* Body Background */
+body {
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.img img,canvas{
+/* Container Styles */
+.container {
+    background: black;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Image Section */
+.img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.img img, canvas {
     max-width: 100%;
     max-height: 100%;
+    display: block;
 }
-.img-box{
-    width: 500px;
-    height: 500px;
-}
-.canvas{
-    max-width: 100%;
+
+.img-box {
+    width: 100%;
+    max-width: 500px;
     height: auto;
-    border: 3px solid #ccc;
 }
-.upload input{
+
+canvas {
+    max-width: 100%;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Upload Section */
+.upload input {
     display: none;
 }
 
-.upload label{
-color: white;
-padding: 8px 20px;
-border: 2px white dashed;
-cursor: pointer;
-border-radius: 10px;
-}
-
-.filters ul,.filters ul li{
-display: flex;
-flex-direction: column;
-gap: 22px;
-direction: rtl;
-cursor: pointer;
-}
-.filters ul li label{
+.upload label {
     color: white;
+    padding: 10px 20px;
+    border: 2px dashed white;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
 }
 
-.filters ul li:last-child{
-flex-direction: row;
-justify-content: space-around;
+/* Filters Section */
+.filters ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    direction: rtl;
 }
-.filters ul li a,span{
-color: white;
-padding: 10px 20px;
-background: green;
-border-radius: 10px;
+
+.filters ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-@media screen and (max-width:650px){
-    .container{
+
+.filters ul li label {
+    color: white;
+    text-align: right;
+}
+
+.filters ul li:last-child {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filters ul li a, span {
+    color: white;
+    padding: 10px 20px;
+    background: green;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
         grid-template-columns: 1fr;
-        gap:  50px;
+        gap: 30px;
     }
-    .img img,canvas{
-        max-width: 80vw;
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .img-box {
+        max-width: 90%;
+    }
+
+    canvas {
+        max-width: 90%;
+    }
+
+    .filters ul li a, span {
+        padding: 8px 16px;
+        font-size: 0.9rem;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .filters ul li label {
+        font-size:

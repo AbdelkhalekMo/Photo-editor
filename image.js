@@ -25,7 +25,7 @@ function resetValue() {
     grayscale.value = "0";
     blur.value = "0";
     hueRotate.value = "0";
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 }
 reset.addEventListener("click", resetValue);
@@ -37,7 +37,7 @@ window.onload = function () {
 };
 
 upload.addEventListener("change", function () {
-    resetValue()
+    resetValue();
     const file = upload.files[0];
     if (!file) return;
 
