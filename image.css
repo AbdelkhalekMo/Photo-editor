@@ -2,7 +2,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family:sans-serif;
     box-sizing: border-box;
 }
 
@@ -23,6 +23,13 @@ header h1 {
     padding: 10px 20px;
     border-radius: 50px;
     text-align: center;
+}
+header h5{
+    color: white;
+  padding-top: 40px;
+ position: absolute;
+ right: -270px;
+ top: -34px;
 }
 
 /* Body Background */
@@ -162,4 +169,16 @@ padding-right: 150px;
     }
 
     .filters ul li label {
-        font-size:
+        font-size:0.9rem;
+    }
+
+    .filters ul li a,
+    span {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .filters .name {
+        padding-right: 150px;
+    }
+}
