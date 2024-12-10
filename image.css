@@ -7,6 +7,7 @@ header{
     display: flex;
     justify-content: center;
     padding: 10px;
+    position: relative;
 }
 header h1{
     border: 3px solid rgb(0, 26, 255);
@@ -25,6 +26,13 @@ body{
     border-radius: 10px;
     display: grid;
     grid-template-columns: 5fr 3fr;
+}
+header h5{
+    color: white;
+  padding-top: 40px;
+ position: absolute;
+ right: 10px;
+ top: -34px;
 }
 .img{
 display: flex;
