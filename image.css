@@ -117,7 +117,7 @@ canvas {
 }
 
 .filters .name{
-padding-right: 150px;
+padding-right: 120px;
 }
 .filters ul li:last-child {
     flex-direction: row;
