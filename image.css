@@ -3,11 +3,23 @@
     margin: 0;
     font-family: sans-serif;
 }
+header{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+header h1{
+    border: 3px solid rgb(0, 26, 255);
+    font-size: 50px;
+   color: white;
+   padding: 15px;
+   border-radius: 50px;
+}
 body{
-   background: #333;
+   background: black;
 }
 .container{
-    background: #222;
+    background: black;
     margin: auto;
     padding: 80px;
     border-radius: 10px;
