@@ -24,13 +24,6 @@ header h1 {
     border-radius: 50px;
     text-align: center;
 }
-header h5{
-    color: white;
-  padding-top: 40px;
- position: absolute;
- right: -270px;
- top: -34px;
-}
 
 /* Body Background */
 body {
